@@ -27,8 +27,13 @@
            ACCEPT WS-USER-INPUT.
            MOVE function reverse(WS-USER-INPUT) TO WS-REVERSED-STRING.
 
-           DISPLAY WS-USER-INPUT.
-           DISPLAY WS-REVERSED-STRING.      
+           IF WS-REVERSED-STRING = WS-USER-INPUT THEN 
+               DISPLAY WS-USER-INPUT " EST UN PALINDROME"
+           ELSE
+               DISPLAY WS-USER-INPUT " N'EST PAS UN PALINDROME"    
+           END-IF.    
+
+                
         
        *> methode à completer encore. car il faut normaliser encore la 
        *> la casse, trimmer les espaces et ignorer la ponctuation. 
