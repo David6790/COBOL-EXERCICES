@@ -4,7 +4,7 @@
     {
       "label": "Compile and Run COBOL",
       "type": "shell",
-      "command": "cobc -x -free ./INTEGER-CHECKER/${fileBasename} && ./${fileBasenameNoExtension}",
+      "command": "cobc -x -free ./PALINDROME-CHECK/${fileBasename} && ./${fileBasenameNoExtension}",
       "group": {
         "kind": "build",
         "isDefault": true
