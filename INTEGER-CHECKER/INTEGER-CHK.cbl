@@ -25,7 +25,7 @@
        PROCEDURE DIVISION.
            DISPLAY "Veuillez saisir un nombre entier positif".
            ACCEPT WS-USER-INPUT.
-           PERFORM UNTIL function numval(WS-USER-INPUT)>0
+           PERFORM UNTIL function numval(WS-USER-INPUT)<0
                DISPLAY "Le nombre saisi n'est pas un entier positif"
                DISPLAY "Veuillez saisir un autre nombre..."
            END-PERFORM.
